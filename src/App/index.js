@@ -1,17 +1,15 @@
-import {myTasks} from '../Data/data';
-import '../App.css';
+import styles from './App.module.css';
+import Task from '../Task';
 
 let toto = "Hello toto !!"
 
 function App() {
+
+
   return (
     <div className="App">
-      <p>{toto}</p>
-      <ul>
-      {myTasks.map(task =>
-        <li>{task.name}</li>)
-        }
-    </ul>
+      <p className={styles.title}>{toto}</p>
+      <Task />
     </div>
   );
 }
