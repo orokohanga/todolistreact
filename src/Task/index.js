@@ -3,11 +3,11 @@ import styles from './App.module.css';
 import { useState } from 'react';
 
 export default function Task() {
-  const [active, setActive] = useState(0)
+    const [active, setActive] = useState(true);
 
-  function crossTask() {
-    
-  }
+    function handleClick() {
+        setActive(!active);
+    }
 
     return (
       <>
@@ -16,9 +16,9 @@ export default function Task() {
       {myTasks.map(task =>
         <li
         onDoubleClick={() => console.log(task.name)}
-        key={task.id} 
-        className={styles.tasks}
-        onClick={crossTask}
+        key={task.id}
+        className={styles.tasks && active ? styles.tasks : styles.cross}
+        onClick={handleClick}
         id='task'>{task.name}
         </li>
         )}
