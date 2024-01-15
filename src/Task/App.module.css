@@ -30,3 +30,7 @@
     text-align: center;
     text-decoration: underline;
 }
+
+.cross {
+    text-decoration:line-through;
+}
