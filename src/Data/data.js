@@ -1,3 +1,5 @@
+
+
 let myTasks = [
     {
         "id" : 1,
@@ -18,5 +20,11 @@ let myTasks = [
         "name" : "Faire le TD",
     },
 ];
+
+export default function addTask(name) {
+let newTask = {"id": myTasks.length ,"name": name}
+myTasks.push(newTask)
+console.log(myTasks)
+}
 
 export {myTasks};

@@ -2,15 +2,20 @@ import styles from './App.module.css';
 import { useState } from 'react';
 
 export default function Task(props) {
-    const [task, setTask] = useState(props.task);
+    const [active, setActive] = useState(true);
+    let task = props.task;
+
+    function handleClick() {
+        setActive(!active);
+    }
 
     return (
         <li 
-        className={styles.tasks}
+        className={active ? styles.tasks : styles.cross}
         onDoubleClick={() => {
                 console.log(task.name);
         }}
-        onClick={}
+        onClick={handleClick}
         >
             {task.name}
         </li>

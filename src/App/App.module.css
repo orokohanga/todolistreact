@@ -3,3 +3,8 @@
     color: red;
     text-align: center;
 }
+
+.task{
+    display: flex;
+    flex-direction: column;
+}
