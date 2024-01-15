@@ -22,7 +22,7 @@ let myTasks = [
 ];
 
 export default function addTask(name) {
-let newTask = {"id": myTasks.length ,"name": name}
+let newTask = {"id": myTasks.length + 1 ,"name": name}
 myTasks.push(newTask)
 console.log(myTasks)
 }

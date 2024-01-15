@@ -6,7 +6,7 @@ export default function Task(props) {
     let task = props.task;
 
     function handleClick() {
-        setActive(!active);
+        setActive(false);
     }
 
     return (
