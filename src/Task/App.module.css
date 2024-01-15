@@ -12,6 +12,7 @@
     width: 20%;
     margin: 0 auto;
     padding: .4rem;
+    margin-bottom: 14px;
     list-style: none;
     font-size: 1.5rem;
     font-weight: 500;
@@ -38,6 +39,7 @@
     justify-content: center;
     width: 20%;
     margin: 0 auto;
+    margin-bottom: 14px;
     padding: .4rem;
     list-style: none;
     font-size: 1.5rem;
