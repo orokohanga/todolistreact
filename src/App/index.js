@@ -1,10 +1,10 @@
 import styles from './App.module.css';
 import TodoList from '../TodoList/index';
 
-let toto = "Hello toto !!"
 
 function App() {
-    
+  let toto = "Hello toto !!"
+  
   return (
     <div className="App">
       <p className={styles.title}>{toto}</p>

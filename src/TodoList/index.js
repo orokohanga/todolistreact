@@ -21,11 +21,12 @@ export default function TodoList() {
 
   return (
     <div className={styles.task}>
-      <ul>
+      <div>
         {myTasks.map((task) => {
           return <Task key={task.id} task={task} />;
-        })}
-      </ul>
+        })
+        }
+      </div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">nom</label>
         <input type="input" onChange={handleChange} placeholder="Ajoutez une tâche !" />
