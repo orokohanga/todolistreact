@@ -2,17 +2,17 @@ import styles from './App.module.css';
 import { useState } from 'react';
 
 export default function Task(props) {
-    const [active, cross] = useState(true);
-
-    function handleClick() {
-      cross(!active);
-    }
+    const [task, setTask] = useState(props.task);
 
     return (
-      <>
-        <li>
-          {props.name}
+        <li 
+        className={styles.tasks}
+        onDoubleClick={() => {
+                console.log(task.name);
+        }}
+        onClick={}
+        >
+            {task.name}
         </li>
-      </>
     )
-  }
+}

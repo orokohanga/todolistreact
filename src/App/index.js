@@ -9,11 +9,14 @@ function App() {
   return (
     <div className="App">
       <p className={styles.title}>{toto}</p>
-      <h1 className={styles.title}>Mes tâches</h1>
-      
       <div className={styles.task}>
-      {myTasks.map(task =>
-      <Task key={task.id} task={task} />)}
+        <ul>
+          {myTasks.map((task) => {
+            return (
+              <Task key={task.id} task={task} />
+            )
+          })}
+        </ul>
       </div>
     </div>
   );
